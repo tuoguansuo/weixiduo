@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+        src="http://code.jquery.com/jquery-2.0.0.min.js"
+        integrity="sha256-1IKHGl6UjLSIT6CXLqmKgavKBXtr0/jJlaGMEkh+dhw="
+        crossorigin="anonymous">
+    </script>    
+    <script type="text/javascript" src="js/getData.js"></script>                
+    <link type="text/css" href="css/css.css" rel="stylesheet"/>
+    
+    <title>会员修改资料</title>
+    <script type="text/javascript" src="js/checkInformation.js"></script>
+   
+</head>
+<body>
+    <div class="ding">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="xia"><a href="vip.html"><img src="img/xia.png" width="25" height="25" align="center"/></a></td>
+                <td class="huiyuan">个人资料</td>
+                <td class="home"><img src="img/home.png" width="25" height="25" align="center"/></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="imgtest">
+        <figure class="touxiang">
+            <div id="icon">
+                <!-- <img src="img/t1.png" /> -->
+            </div> 
+        </figure>
+        <div class="shenfen" id="phoneAndLevel">
+            <!--此处需要获取后台数据 -->
+                <!-- <p class="p1">15579218252</p>
+                <p class="p1">铜卡会员</p> -->
+        </div>
+    </div>
+
+        <div>
+                <div class="input1">
+                    <label class="lable1">
+                        昵称
+                    </label>
+                    &nbsp
+                    <input id="name" class="input2" type="text" height="50px"/>
+                </div>
+                <div class="input1">
+                    <label class="lable1">
+                        姓名
+                    </label>
+                    <input id="realName" class="input2" type="text" style="margin-left:45px"/>
+                </div>
+                <div class="input1">
+                    <label class="lable1">
+                        性别
+                    </label>
+                    
+                    <input type="radio" name="gender" value="男" id="sex" checked style="margin-left:45px"/>男
+                    <input type="radio" name="gender" value="女" id="sex" style="margin-left:45px"/>女
+                 </div>
+                 <div class="input1">
+                     <label class="lable1">
+                         手机号
+                     </label>
+                     <input id="phone" class="input2" type="text" style="margin-left:31px"/>
+                 </div>
+                 <div class="input1">
+                     <label class="lable1">
+                         生日
+                     </label>
+                     <input id="birthday" type="date" style="margin-left:40px" class="input3" onfocus="this.blur()"/>
+                     <label class="limit">保存后不可修改</label>
+                 </div>
+                 <div class="input1">
+                     <label class="lable1">
+                         家庭地址
+                     </label>
+                     <input id="address" class="input2" style="margin-left:18px" type="text"/>
+                     
+                 </div>
+                 <div class="input1">
+                    <label class="lable1">婚姻状况</label>
+                   
+                    <input type="radio" name="marriage" value="1" height="50px" style="margin-left:18px"/>已婚
+                    
+                    <input type="radio" name="marriage" value="0" height="50px" checked style="margin-left:45px"/>未婚
+                 </div>
+                 <div class="input1">
+                     <label class="lable1">小孩</label>
+                    
+                     <input type="radio" name="kid" value="1" height="50px" style="margin-left:45px"/>有
+                     
+                     <input type="radio" name="kid" value="0" height="50px" checked style="margin-left:60px"/>无
+                 </div>
+                
+                <button class="button" type="button" onclick="check()" id="saveData">保存</button>  
+        </div>
+        
+    
+</body>
+</html>
